@@ -12,4 +12,4 @@ Step 5. In RStudio: setwd("/Users/Mark/datasciencecoursera/Course3/UCI HAR Datas
     
 Step 6. Type source("run_analysis.R")
 
-Step 7. In order to import the new tidy data, type data <- read.table("data_set_with_the_averages.txt") to read the file and assign to data. It is 180x68 because there are 30 subjects and 6 activities, thus "for each activity and each subject" means 30 * 6 = 180 rows. Note that the provided R script has no assumptions on numbers of records, only on locations of files.
+Step 7. In order to import the new tidy data, type data <- read.table("tidy_data.txt") to read the file and assign to data. It is 180x68 because there are 30 subjects and 6 activities, thus "for each activity and each subject" means 30 * 6 = 180 rows. Note that the provided R script has no assumptions on numbers of records, only on locations of files.
