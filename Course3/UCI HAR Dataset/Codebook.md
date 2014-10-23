@@ -7,7 +7,14 @@ Original description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Reco
 
 The attached R script (run_analysis.R) performs the following to clean up the data:
 
-* Merges the training and test sets to create one data set, namely train/X_train.txt with test/X_test.txt, the result of which is a 10299x561 data frame, as in the original description ("Number of Instances: 10299" and "Number of Attributes: 561"), train/subject_train.txt with test/subject_test.txt, the result of which is a 10299x1 data frame with subject IDs, and train/y_train.txt with test/y_test.txt, the result of which is also a 10299x1 data frame with activity IDs.
+    1.Merges the training and the test sets to create one data set.
+    2.Extracts only the measurements on the mean and standard deviation for each measurement. 
+    3.Uses descriptive activity names to name the activities in the data set
+    4.Appropriately labels the data set with descriptive variable names. 
+    5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
+* Merges the "train"" and "test"" sets to create one data set, namely train/X_train.txt with test/X_test.txt, the result of which is a 10299x561 data frame, as in the original description ("Number of Instances: 10299" and "Number of Attributes: 561"), train/subject_train.txt with test/subject_test.txt, the result of which is a 10299x1 data frame with subject IDs, and train/y_train.txt with test/y_test.txt, the result of which is also a 10299x1 data frame with activity IDs.
 
 * Reads features.txt and extracts only the measurements on the mean and standard deviation for each measurement. The result is a 10299x66 data frame, because only 66 out of 561 attributes are measurements on the mean and standard deviation. All measurements appear to be floating point numbers in the range (-1, 1).
 
